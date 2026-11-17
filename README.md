@@ -1,45 +1,73 @@
 # Simple Interest Calculator
 
-## Project Name
-**Simple Interest Calculator**
+A lightweight command-line simple-interest calculator written in Bash.
 
-## Description
-A simple interest calculator built using Bash scripting. This tool allows users to compute simple interest based on three input fields: principal amount, rate of interest, and time period.
+## Overview
+
+The script asks for a principal amount, an annual interest rate, and a time period in years. It then calculates the simple interest and prints the result to two decimal places.
 
 ## Formula
-```
+
+```text
 Simple Interest = (Principal × Rate × Time) / 100
 ```
 
-## Input Fields
-- **Principal** – The initial amount of money
-- **Rate of Interest** – The annual interest rate (in percentage)
-- **Time Period** – The duration (in years)
+This project calculates **interest only**; it does not add the interest to the principal to calculate a maturity amount.
 
-## Usage
+## Requirements
+
+- Bash
+- `bc` for decimal arithmetic
+
+On Debian/Ubuntu, install `bc` with:
+
 ```bash
+sudo apt-get update
+sudo apt-get install bc
+```
+
+## Run the calculator
+
+Clone the repository and move into the project directory:
+
+```bash
+git clone https://github.com/devoshreesaha2006/github-final-project.git
+cd github-final-project
 bash simple-interest.sh
 ```
 
-## Example
+You can also make the script executable and run it directly:
+
+```bash
+chmod +x simple-interest.sh
+./simple-interest.sh
 ```
-Enter Principal: 1000
-Enter Rate of Interest: 5
+
+## Example
+
+For a principal of 1000, an annual rate of 5%, and a time period of 3 years:
+
+```text
+Enter Principal Amount: 1000
+Enter Rate of Interest (% per year): 5
 Enter Time Period (in years): 3
 Simple Interest = 150.00
 ```
 
-## Files
-| File | Description |
-|------|-------------|
-| `simple-interest.sh` | Bash script for the calculator |
-| `README.md` | Project documentation |
-| `LICENSE` | Apache 2.0 License |
-| `CODE_OF_CONDUCT.md` | Community code of conduct |
-| `CONTRIBUTING.md` | Contribution guidelines |
+## Project files
+
+| File | Purpose |
+| --- | --- |
+| `simple-interest.sh` | Bash script that calculates simple interest |
+| `README.md` | Project overview and usage instructions |
+| `LICENSE` | Apache License 2.0 |
+| `CODE_OF_CONDUCT.md` | Community participation guidelines |
+| `CONTRIBUTING.md` | Contribution instructions |
 
 ## License
-This project is licensed under the [Apache 2.0 License](LICENSE).
+
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 ## Contributing
-We welcome all contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
